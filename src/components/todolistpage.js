@@ -133,7 +133,7 @@ const ToDoPage = ()=>{
                                                         (
                                                             <tr>
                                                                 <td>
-                                                                    <button type='button' className="btn deleteIcon" data-bs-toggle="modal" data-bs-target="#deletetodo">
+                                                                    <button type='button' className="btn deleteIcon" onClick={e=>deleteTodo(e,todo._id)}>
                                                                         <i className="fa fa-trash"></i> 
                                                                         <span className="tooltiptext">remove</span>    
                                    
@@ -142,23 +142,6 @@ const ToDoPage = ()=>{
                                                                         <i className="fa fa-edit"></i>
                                                                         <span className="tooltiptext">edit</span>            
                                                                     </button>
-                                                                    <div className="modal fade" id="deletetodo" tabIndex="-1" aria-labelledby="DeleteTodoLabel" aria-hidden="true">
-                                                                        <div className="modal-dialog">
-                                                                            <div className="modal-content">
-                                                                                <div className="modal-header">
-                                                                                    <h5 className="modal-title" id="exampleModalLabel">Delete ToDo list</h5>
-                                                                                    <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                                                </div>
-                                                                                <div className="modal-body">
-                                                                                    Are you sure you want to delete 'ToDo'?
-                                                                                </div>
-                                                                                <div className="modal-footer">
-                                                                                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                                                                    <button onClick={e=>deleteTodo(e,todo._id)} type="button" className="btn btn-danger" data-bs-dismiss="modal">Confirm</button>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
                                                                 </td>
                                                                 <td><b>{todo.description}</b></td>
                                                                 <td>{todo.dateCreated}</td>
