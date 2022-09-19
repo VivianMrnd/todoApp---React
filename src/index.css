@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+}
+
+.homepage{
+  text-align: center;
+  margin-top: 180px;
+}
+
+.todopage{
+  padding-top: 50px;
+}
+#startcreating{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.home{
+  text-decoration: none;
+  color: black;
+}
+.nav-item{
+  padding-right: 200px;
+}
+.navbar-brand{
+  padding-right: 50px;
+}
+.navbar{
+  background-color:  rgb(228, 196, 149);
+}
+.home{
+  text-decoration: none;
+  
+}
+.footer{
+  height: 60px;
+  text-transform: uppercase;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background-color: black;
+}
+
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.fa-home,.cancelIcon,.saveIcon, .deleteIcon,.editIcon {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.fa-home .tooltiptext,.cancelIcon .tooltiptext,.saveIcon .tooltiptext, .editIcon .tooltiptext,.deleteIcon .tooltiptext {
+  visibility: hidden;
+  width: 70px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.fa-home:hover .tooltiptext,.cancelIcon:hover .tooltiptext,.saveIcon:hover .tooltiptext,.editIcon:hover .tooltiptext,.deleteIcon:hover .tooltiptext {
+  visibility: visible;
+}
+
+.addform{
+  height: 190px;
+  background-color: rgb(228, 196, 149);
+  width: 350px;
+  padding: 10px;
+}
+
+.addform textarea{
+  height:120px;
+  width: 320px;
+}
+table{
+  text-transform: capitalize;
+}
+.todotitle{
+  text-transform: uppercase;
+}
+
+.tablescroll{
+  border: 1px solid rgb(216, 160, 160);
+  padding: 15px;
+  overflow-y: auto;
+  height: 350px;
+  background-color: rgb(228, 196, 149);
+  /* padding-bottom: 10px; */
+}
+
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(240, 227, 207); 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c7a6a6; 
+}
+
